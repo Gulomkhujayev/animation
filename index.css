@@ -1,0 +1,31 @@
+.parent {
+  background: #001a6fc3;
+  width: 600px;
+  height: 600px;
+}
+.child {
+  background: #000000;
+  height: 40%;
+  width: 40%;
+  transition: transform linear 3s;
+  transform: translateX(0%);
+  animation: ani 5s linear;
+  animation-iteration-count: infinite;
+}
+@keyframes ani {
+  0%,100% {
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateX(150%);
+    background-color: red;
+  }
+  50% {
+    transform: translateX(150%) translateY(150%);
+    background-color: yellow;
+  }
+  75% {
+    transform: translateY(150%);
+    background-color: blue;
+  }
+}
